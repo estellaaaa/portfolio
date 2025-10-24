@@ -389,17 +389,37 @@
 
 /* About Section Layout */
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
-  align-items: start;
+  align-items: center;
   margin-top: 2rem;
+  text-align: center;
+}
+
+.about-content > .caption {
+  max-width: 800px;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    text-align: left;
+  }
+  
+  .about-content > .caption {
+    max-width: none;
+  }
 }
 
 @media (max-width: 768px) {
   .about-content {
-    grid-template-columns: 1fr;
     gap: 2rem;
+    padding: 0 1rem;
   }
 }
 
@@ -871,6 +891,16 @@
   .caption h2 {
     font-size: 1.25rem;
     line-height: 1.4;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   /* Skills Section */
