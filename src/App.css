@@ -46,6 +46,7 @@
 .caption h2 {
   color: #FFEAEE !important;
   margin: 0;
+  font-family: 'FutureHandwritten', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .read-the-docs {
