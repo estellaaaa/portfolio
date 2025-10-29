@@ -118,17 +118,14 @@ const Contact = () => {
       <div className="contact-card expanded">
         <div className="contact-info">
           <h4>Let's work together!</h4>
-          <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about web development and creative projects.</p>
+          <p>I'm actively looking for an internship opportunity and always open to discussing new projects, collaborations, or just having a chat about web development, game development, or anything involving computer graphics.</p>
           
           <div className="availability">
-            <h5>📍 Location:</h5>
-            <p>Available for remote work worldwide</p>
-            
             <h5>⏰ Availability:</h5>
-            <p>Open to new projects and collaborations</p>
+            <p>Actively seeking internship opportunities</p>
             
             <h5>💼 Interests:</h5>
-            <p>Frontend Development • UI/UX Design • Creative Web Experiences</p>
+            <p>Frontend Development • Game Development • Computer Graphics • UI/UX Design</p>
           </div>
         </div>
 
@@ -136,7 +133,7 @@ const Contact = () => {
           <div className="social-links">
             <h4>Find me online:</h4>
               <div className="social-grid">
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
+                <a href="https://www.linkedin.com/in/estella-kinzel" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                   <div className="social-icon">💼</div>
                   <div className="social-text">
                     <span className="social-name">LinkedIn</span>
@@ -144,7 +141,7 @@ const Contact = () => {
                   </div>
                 </a>
                 
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link github">
+                <a href="https://github.com/estellaaaa" target="_blank" rel="noopener noreferrer" className="social-link github">
                   <div className="social-icon">🐙</div>
                   <div className="social-text">
                     <span className="social-name">GitHub</span>
@@ -152,21 +149,14 @@ const Contact = () => {
                   </div>
                 </a>
                 
-                <a href="mailto:your.email@example.com" className="social-link email">
+                <a href="mailto:estella.kinzel@gmail.com" className="social-link email">
                   <div className="social-icon">📧</div>
                   <div className="social-text">
                     <span className="social-name">Email</span>
                     <span className="social-desc">Direct contact</span>
                   </div>
                 </a>
-                
-                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" className="social-link twitter">
-                  <div className="social-icon">�</div>
-                  <div className="social-text">
-                    <span className="social-name">Twitter</span>
-                    <span className="social-desc">Latest updates</span>
-                  </div>
-                </a>
+
               </div>
             </div>
         </div>
@@ -184,35 +174,35 @@ function App() {
       title: "Study Plan Maker",
       shortDescription: "Django web application for creating and managing study schedules",
       image: studyplanmaker,
-      longDescription: "A comprehensive Django web application that helps students create, organize, and track their study plans. Features include personalized study schedules, progress tracking, deadline management, and study session analytics. Built with a clean, intuitive interface for optimal productivity.",
-      technologies: ["Django", "Python", "HTML/CSS", "JavaScript", "SQLite"],
+      longDescription: "A Django web application that helps students organize their study plans efficiently. Students can add courses they want to study for, setting different options like study intensity and optional days. The application then automatically creates a fitting schedule that accommodates all courses. Through Google Calendar API integration, users can log in and directly add their generated study sessions to their personal calendar.",
+      technologies: ["Django", "Python", "PostgreSQL", "Google Calendar API", "HTML/CSS", "JavaScript"],
       link: "https://github.com/estellaaaa/Study_Plan_Maker"
     },
     {
       id: 2,
       title: "Newsletter System",
-      shortDescription: "Automated newsletter management and distribution system built with Python",
+      shortDescription: "Simple Python newsletter program with turtle-based UI",
       image: newsletter,
-      longDescription: "A comprehensive newsletter management system developed in Python that automates email campaign creation, subscriber management, and content distribution. Features include template customization, analytics tracking, subscription handling, and automated scheduling for efficient newsletter operations.",
-      technologies: ["Python", "Flask", "SQLAlchemy", "SMTP", "HTML/CSS"],
+      longDescription: "A simple Python program that helps send newsletters to subscribers. Built with Python's turtle graphics for the user interface, it allows you to load subscriber email addresses from a CSV file and type your message in a text field to send to all subscribers. A straightforward tool that demonstrates basic file handling and email functionality.",
+      technologies: ["Python", "Turtle Graphics", "CSV", "Email/SMTP", "File I/O"],
       link: "https://github.com/estellaaaa/Newsletter"
     },
     {
       id: 3,
       title: "Design Portfolio",
-      shortDescription: "Creative design showcase featuring UI/UX projects and visual designs",
+      shortDescription: "Creative design showcase featuring different design projects",
       image: portfolioImg,
-      longDescription: "A comprehensive design portfolio showcasing my creative work in UI/UX design, visual branding, and digital graphics. Features interactive prototypes, design case studies, brand identity projects, and user experience research. Demonstrates proficiency in modern design tools and methodologies.",
-      technologies: ["Figma", "Adobe Creative Suite", "Sketch", "InVision", "Principle"],
+      longDescription: "A collection of smaller creative projects including graphic design work, brand identity experiments, and social media content. This portfolio features various design explorations, video content creation, and visual materials developed for different platforms and purposes. Each project has been an opportunity to experiment with different design approaches and visual storytelling.",
+      technologies: ["Adobe Creative Suite", "Procreate", "Video Editing", "Social Media Design"],
       link: "https://express.adobe.com/page/T7bGFle8ANkGF"
     },
     {
       id: 4,
       title: "this is sketchy!",
-      shortDescription: "Interactive Unity game featuring creative drawing and puzzle mechanics",
+      shortDescription: "Unity RPG game project with creative design elements",
       image: sketchy,
-      longDescription: "An engaging Unity-based game that combines drawing mechanics with puzzle-solving elements. Players create sketches that come to life within the game world, featuring physics-based interactions, creative level design, and intuitive touch controls. Built with Unity's 2D tools and custom scripting for a unique gaming experience.",
-      technologies: ["Unity", "C#", "Unity 2D", "Physics2D", "Animation System"],
+      longDescription: "An ongoing small Unity RPG game project where I've been exploring game development. This project has been a great way to collect experiences in game development and learn about design workflows. The visual elements and character designs were created using Procreate, while I've been experimenting with RPG mechanics and interactions in Unity with C#.",
+      technologies: ["Unity", "C#", "Procreate", "Game Design", "2D Graphics"],
       link: "https://github.com/estellaaaa/this-is-sketchy"
     }
   ];
