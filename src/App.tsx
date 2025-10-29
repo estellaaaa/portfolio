@@ -121,11 +121,8 @@ const Contact = () => {
           <p>I'm actively looking for an internship opportunity and always open to discussing new projects, collaborations, or just having a chat about web development, game development, or anything involving computer graphics.</p>
           
           <div className="availability">
-            <h5>⏰ Availability:</h5>
+            <h5>Availability:</h5>
             <p>Actively seeking internship opportunities</p>
-            
-            <h5>💼 Interests:</h5>
-            <p>Frontend Development • Game Development • Computer Graphics • UI/UX Design</p>
           </div>
         </div>
 
