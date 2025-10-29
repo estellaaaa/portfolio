@@ -96,7 +96,7 @@ const Navigation = () => {
         </div>
         <ul className="nav-menu">
           <li className="nav-item">
-            <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
+            <button onClick={() => scrollToSection('about')} className="nav-link">About me</button>
           </li>
           <li className="nav-item">
             <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
