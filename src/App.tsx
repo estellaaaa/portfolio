@@ -1,4 +1,3 @@
-// import viteLogo from '/vite.svg'
 import { useState } from 'react'
 import logo from './assets/logo.png'
 import circle from './assets/circle.png'
@@ -251,42 +250,117 @@ function App() {
             <div className="caption">
               <h2>My Skills</h2>
               <div className="skills-grid">
-                {(
-                  [
-                    { name: 'Java, C#', level: 4 },
-                    { name: 'Python, JS', level: 4.5 },
-                    { name: 'SQL', level: 3.5 },
-                    { name: 'Node, Django', level: 3 },
-                    { name: 'Git', level: 3 },
-                    { name: 'Unity, Maya', level: 4.5 },
-                  ] as { name: string; level: number }[]
-                ).map((skill) => (
-                  <div className="skill-item" key={skill.name}>
-                    <span className="skill-name">{skill.name}</span>
-                    <div
-                      className="skill-scale"
-                      style={{
-                        background: '#fff',
-                        border: '2px solid #D1603D',
-                        borderRadius: 9999,
-                        overflow: 'hidden',
-                        height: '1.1rem',
-                        margin: '0.5rem 0',
-                      }}
-                    >
-                      <div
-                        className="skill-bar"
-                        style={{
-                          height: '100%',
-                          background: '#D1603D',
-                          width: `${(skill.level / 5) * 100}%`,
-                          transition: 'width 400ms ease',
-                        }}
-                      />
+                <div className="skill-item">
+                  <span className="skill-name">Java, C#, C++</span>
+                  <div className="skill-scale">
+                    <div className="scale-dots">
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot"></span>
                     </div>
-                    <span className="skill-level">{Number.isInteger(skill.level) ? `${skill.level}/5` : `${skill.level}/5`}</span>
                   </div>
-                ))}
+                  <span className="skill-level">4/5</span>
+                </div>
+                
+                <div className="skill-item">
+                  <span className="skill-name">Python, JS</span>
+                  <div className="skill-scale">
+                    <div className="scale-dots">
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot"></span>
+                    </div>
+                  </div>
+                  <span className="skill-level">4/5</span>
+                </div>
+                
+                <div className="skill-item">
+                  <span className="skill-name">SQL</span>
+                  <div className="skill-scale">
+                    <div className="scale-dots">
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot"></span>
+                      <span className="dot"></span>
+                    </div>
+                  </div>
+                  <span className="skill-level">3/5</span>
+                </div>
+                
+                <div className="skill-item">
+                  <span className="skill-name">Node, Django</span>
+                  <div className="skill-scale">
+                    <div className="scale-dots">
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot"></span>
+                    </div>
+                  </div>
+                  <span className="skill-level">3/5</span>
+                </div>
+                
+                <div className="skill-item">
+                  <span className="skill-name">Git</span>
+                  <div className="skill-scale">
+                    <div className="scale-dots">
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot"></span>
+                      <span className="dot"></span>
+                    </div>
+                  </div>
+                  <span className="skill-level">3/5</span>
+                </div>
+                
+                <div className="skill-item">
+                  <span className="skill-name">Unity, Maya, Blender</span>
+                  <div className="skill-scale">
+                    <div className="scale-dots">
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot"></span>
+                      <span className="dot"></span>
+                    </div>
+                  </div>
+                  <span className="skill-level">3/5</span>
+                </div>
+                
+                <div className="skill-item">
+                  <span className="skill-name">Adobe Tools</span>
+                  <div className="skill-scale">
+                    <div className="scale-dots">
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot"></span>
+                    </div>
+                  </div>
+                  <span className="skill-level">3/5</span>
+                </div>
+                
+                <div className="skill-item">
+                  <span className="skill-name">Power Apps, Mendix, Snowflake</span>
+                  <div className="skill-scale">
+                    <div className="scale-dots">
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot filled"></span>
+                      <span className="dot"></span>
+                      <span className="dot"></span>
+                    </div>
+                  </div>
+                  <span className="skill-level">3/5</span>
+                </div>
               </div>
             </div>
           </div>
