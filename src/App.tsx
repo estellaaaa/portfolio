@@ -251,117 +251,42 @@ function App() {
             <div className="caption">
               <h2>My Skills</h2>
               <div className="skills-grid">
-                <div className="skill-item">
-                  <span className="skill-name">Java</span>
-                  <div className="skill-scale">
-                    <div className="scale-dots">
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot"></span>
+                {(
+                  [
+                    { name: 'Java, C#', level: 4 },
+                    { name: 'Python, JS', level: 4.5 },
+                    { name: 'SQL', level: 3.5 },
+                    { name: 'Node, Django', level: 3 },
+                    { name: 'Git', level: 3 },
+                    { name: 'Unity, Maya', level: 4.5 },
+                  ] as { name: string; level: number }[]
+                ).map((skill) => (
+                  <div className="skill-item" key={skill.name}>
+                    <span className="skill-name">{skill.name}</span>
+                    <div
+                      className="skill-scale"
+                      style={{
+                        background: '#fff',
+                        border: '2px solid #D1603D',
+                        borderRadius: 9999,
+                        overflow: 'hidden',
+                        height: '1.1rem',
+                        margin: '0.5rem 0',
+                      }}
+                    >
+                      <div
+                        className="skill-bar"
+                        style={{
+                          height: '100%',
+                          background: '#D1603D',
+                          width: `${(skill.level / 5) * 100}%`,
+                          transition: 'width 400ms ease',
+                        }}
+                      />
                     </div>
+                    <span className="skill-level">{Number.isInteger(skill.level) ? `${skill.level}/5` : `${skill.level}/5`}</span>
                   </div>
-                  <span className="skill-level">4/5</span>
-                </div>
-                
-                <div className="skill-item">
-                  <span className="skill-name">C#</span>
-                  <div className="skill-scale">
-                    <div className="scale-dots">
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot"></span>
-                    </div>
-                  </div>
-                  <span className="skill-level">4/5</span>
-                </div>
-                
-                <div className="skill-item">
-                  <span className="skill-name">Python</span>
-                  <div className="skill-scale">
-                    <div className="scale-dots">
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
-                  </div>
-                  <span className="skill-level">3/5</span>
-                </div>
-                
-                <div className="skill-item">
-                  <span className="skill-name">Maya</span>
-                  <div className="skill-scale">
-                    <div className="scale-dots">
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot"></span>
-                    </div>
-                  </div>
-                  <span className="skill-level">4/5</span>
-                </div>
-                
-                <div className="skill-item">
-                  <span className="skill-name">GLSL</span>
-                  <div className="skill-scale">
-                    <div className="scale-dots">
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
-                  </div>
-                  <span className="skill-level">3/5</span>
-                </div>
-                
-                <div className="skill-item">
-                  <span className="skill-name">Adobe After Effects</span>
-                  <div className="skill-scale">
-                    <div className="scale-dots">
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
-                  </div>
-                  <span className="skill-level">3/5</span>
-                </div>
-                
-                <div className="skill-item">
-                  <span className="skill-name">Adobe Illustrator</span>
-                  <div className="skill-scale">
-                    <div className="scale-dots">
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot"></span>
-                    </div>
-                  </div>
-                  <span className="skill-level">4/5</span>
-                </div>
-                
-                <div className="skill-item">
-                  <span className="skill-name">Node.js</span>
-                  <div className="skill-scale">
-                    <div className="scale-dots">
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot filled"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
-                  </div>
-                  <span className="skill-level">3/5</span>
-                </div>
+                ))}
               </div>
             </div>
           </div>
