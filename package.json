@@ -6,6 +6,7 @@
   "homepage": "https://estellaaaa.github.io/portfolio",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node ./scripts/copy-favicon.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
